@@ -121,6 +121,7 @@ class NavbarComp extends React.Component {
                       background: "rgb(254,104,84)",
                       color: "white",
                       borderRadius: "8px",
+                      width: "100%",
                     }}
                   >
                     Login
