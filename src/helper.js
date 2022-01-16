@@ -1,1 +1,1 @@
-export const URL_API = "http://purwadhikafs3.com:8021";
+export const URL_API = "https://purwa-express-api.herokuapp.com";
