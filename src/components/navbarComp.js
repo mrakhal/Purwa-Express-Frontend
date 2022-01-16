@@ -120,8 +120,7 @@ class NavbarComp extends React.Component {
                     style={{
                       background: "rgb(254,104,84)",
                       color: "white",
-                      width: "100%",
-                      borderRadius: "5%",
+                      borderRadius: "8px",
                     }}
                   >
                     Login
@@ -155,24 +154,24 @@ class NavbarComp extends React.Component {
           }}
         /> */}
         {/* <Collapse isOpen={this.state.isOpen} navbar> */}
-          <Nav className="m-auto" navbar>
+        <Nav className="m-auto" navbar>
+          <NavItem>
+            <NavLink href="#">
+              <Link className="d-flex pr-5" to="/">
+                <h5>HOME</h5>
+              </Link>
+            </NavLink>
+          </NavItem>
+          {this.props.idrole === 3 && (
             <NavItem>
               <NavLink href="#">
-                <Link className="d-flex pr-5" to="/">
-                  <h5>HOME</h5>
+                <Link className="d-flex pr-5" to="/status">
+                  <h5>STATUS</h5>
                 </Link>
               </NavLink>
             </NavItem>
-            {this.props.idrole === 3 && (
-              <NavItem>
-                <NavLink href="#">
-                  <Link className="d-flex pr-5" to="/status">
-                    <h5>STATUS</h5>
-                  </Link>
-                </NavLink>
-              </NavItem>
-            )}
-          </Nav>
+          )}
+        </Nav>
         {/* </Collapse> */}
         <NavItem style={{ listStyleType: "none" }}>
           {this.props.username ? (
